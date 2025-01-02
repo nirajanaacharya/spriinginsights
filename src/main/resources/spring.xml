@@ -7,6 +7,13 @@
         <constructor-arg name="age" value="12"/>
         <constructor-arg name="name" value="Hiroshima"/>
         <constructor-arg name="id" value="1"/>
-
+    </bean>
+    <bean id = "ph1" class="com.springfile.springintro.Philppe" init-method="initmethod" destroy-method="destroymethod">
+        <property name="name" value="Nirajan"/>
+        <property name="price" value="21"/>
+    </bean>
+    <bean id="inter" class="com.springfile.springintro.Inter">
+        <property name="version" value="12"/>
+        <property name="name" value="Nirajan"/>
     </bean>
 </beans>
