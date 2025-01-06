@@ -12,10 +12,8 @@ public class SpringintroApplication {
 
 	public static void main(String[] args) {
 
-		AbstractApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
-//		Philppe phil = (Philppe) context.getBean("ph1"); Bean Creation and destruction in the code
-		context.registerShutdownHook();
-		Inter inter = (Inter) context.getBean("inter");
+		AbstractApplicationContext context = new ClassPathXmlApplicationContext("config.xml");
+		Awiring awr =(Awiring) context.getBean("awe");
 
 
 
