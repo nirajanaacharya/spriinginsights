@@ -14,6 +14,7 @@ public class SpringintroApplication {
 
 		AbstractApplicationContext context = new ClassPathXmlApplicationContext("config.xml");
 		Awiring awr =(Awiring) context.getBean("awe");
+		awr.getAwiring();
 
 
 

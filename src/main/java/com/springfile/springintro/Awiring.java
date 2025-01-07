@@ -1,7 +1,7 @@
 package com.springfile.springintro;
 
 public class Awiring {
-    public AwiringContainer wiring;
+    private AwiringContainer wiring;
 
     public AwiringContainer getAwiring() {
         return wiring;
