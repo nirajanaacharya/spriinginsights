@@ -4,8 +4,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 
 public class Student {
-    @Autowired
-    @Qualifier("bye")
+//    @Autowired
+//    @Qualifier("bye")
     private Person person;
 
     public Person getPerson() {
