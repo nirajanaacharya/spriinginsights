@@ -11,11 +11,9 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class SpringintroApplication {
 
 	public static void main(String[] args) {
-
-		AbstractApplicationContext context = new ClassPathXmlApplicationContext("config.xml");
-		Awiring awr =(Awiring) context.getBean("awe");
-		awr.getAwiring();
-
+		ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
+		Student student1 = (Student)context.getBean("student");
+		System.out.println(student1);
 
 
 
