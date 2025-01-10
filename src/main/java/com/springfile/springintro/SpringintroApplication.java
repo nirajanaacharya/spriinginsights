@@ -14,6 +14,7 @@ public class SpringintroApplication {
 		ApplicationContext context = new ClassPathXmlApplicationContext("config.xml");
 		Employee e1 =(Employee) context.getBean("employee");
 		System.out.println(e1);
+		System.out.println("Hello World");
 	}
 
 }
