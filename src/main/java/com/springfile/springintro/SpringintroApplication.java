@@ -11,10 +11,13 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class SpringintroApplication {
 
 	public static void main(String[] args) {
-		ApplicationContext context = new ClassPathXmlApplicationContext("config.xml");
-		Employee e1 =(Employee) context.getBean("employee");
-		System.out.println(e1);
-		System.out.println("Hello World");
+		ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
+		Student student1 = (Student)context.getBean("student");
+		System.out.println(student1);
+		Student student2 = (Student)context.getBean("student");
+		System.out.println(student2);
+		System.out.println(student1.hashCode());
+		System.out.println(student2.hashCode());
 	}
 
 }
