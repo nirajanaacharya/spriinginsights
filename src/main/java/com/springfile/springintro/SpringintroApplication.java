@@ -12,12 +12,8 @@ public class SpringintroApplication {
 
 	public static void main(String[] args) {
 		ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
-		Student student1 = (Student)context.getBean("student");
-		System.out.println(student1);
-		Student student2 = (Student)context.getBean("student");
-		System.out.println(student2);
-		System.out.println(student1.hashCode());
-		System.out.println(student2.hashCode());
+		Compo com1 = (Compo) context.getBean("comp1");
+		System.out.println(com1);
 	}
 
 }
