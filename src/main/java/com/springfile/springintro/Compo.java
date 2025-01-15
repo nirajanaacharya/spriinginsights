@@ -12,6 +12,7 @@ public class Compo {
     public Compo(@Value("12") int age, @Value("Nirajan") String name) {
         this.age = age;
         this.name = name;
+        System.out.println("Compo " + name + " is " + age + " years old");
     }
 
     @Override
